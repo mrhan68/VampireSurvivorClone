@@ -67,11 +67,20 @@ public class GunEnemyBehaviour : MonoBehaviour{
         }
     }
     public bool TakeDamage(float damage){
+        bool isCrit = false;
+        int weight = UnityEngine.Random.Range(0, 100);
+        if(weight<_gameManager.critChance){
+            damage*=_gameManager.critDamage/100;
+            isCrit = true;
+        }
         damage*= _dameReceived;
         _health -= damage;
         GameObject popUp = Instantiate(_popUpDamage, transform.position, quaternion.identity);
         popUp.GetComponent<TextMeshPro>().text = damage.ToString();
         popUp.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 2f);
+        if(isCrit){
+            popUp.GetComponent<TextMeshPro>().color = Color.red;
+        }
         Destroy(popUp, 1f);
         if(_health <= 0){
             _disableEnemy = true;

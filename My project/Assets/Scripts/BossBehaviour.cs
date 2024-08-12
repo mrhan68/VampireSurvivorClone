@@ -18,6 +18,7 @@ public class BossBehaviour : MonoBehaviour
     Quaternion _targetRotation;
     bool _disableEnemy = false;
     Vector2 _moveDirection;
+    Vector3 _playerPosition;
     bool isColded=false;
     private bool isPoisoned = false;
     private float poisonDuration = 5f; // Duration of the poison effect
@@ -27,15 +28,18 @@ public class BossBehaviour : MonoBehaviour
     private int trapDuration;
     public float explosionDamage = 30f; // Damage dealt by the explosion
     public float explosionRadius = 5f;  // Radius of the explosion
+    private bool dashing = false;
 
     void Start(){
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         _player = GameObject.Find("Player");
         _health = _gameManager._bossHealth;
         _speed = _gameManager._enemySpeed;
+        StartCoroutine(Dash());
     }
     void Update(){
         if(_gameManager.isGameOver) return;
+        if(!dashing) _playerPosition = _player.transform.position; 
         if(!_gameManager.isGameOver || !_disableEnemy){
             MoveEnemy();
             RotateEnemy();
@@ -44,11 +48,11 @@ public class BossBehaviour : MonoBehaviour
 
     void MoveEnemy(){
         if(_gameManager.isGameOver) return;
-        transform.position = Vector2.MoveTowards(transform.position, _player.transform.position, _speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, _playerPosition, _speed * Time.deltaTime);
     }
 
     void RotateEnemy(){
-        _moveDirection = _player.transform.position - transform.position;
+        _moveDirection = _playerPosition - transform.position;
         _moveDirection.Normalize();
         _targetRotation = Quaternion.LookRotation(Vector3.forward, _moveDirection);
 
@@ -57,11 +61,20 @@ public class BossBehaviour : MonoBehaviour
         }
     }
     public bool TakeDamage(float damage){
+        bool isCrit = false;
+        int weight = UnityEngine.Random.Range(0, 100);
+        if(weight<_gameManager.critChance){
+            damage*=_gameManager.critDamage/100;
+            isCrit = true;
+        }
         damage*= _dameReceived;
         _health -= damage;
         GameObject popUp = Instantiate(_popUpDamage, transform.position, quaternion.identity);
         popUp.GetComponent<TextMeshPro>().text = damage.ToString();
         popUp.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 2f);
+        if(isCrit){
+            popUp.GetComponent<TextMeshPro>().color = Color.red;
+        }
         Destroy(popUp, 1f);
         if(_health <= 0){
             _disableEnemy = true;
@@ -146,6 +159,32 @@ public class BossBehaviour : MonoBehaviour
             Explode();
         }
         _gameManager._killCount++;
+    }
+    private IEnumerator Dash()
+    {
+        float dashRange = 10f; // Distance from the player to start dashing
+        float dashTime = 0.5f; // Time taken to dash to the player
+
+        while (true)
+        {
+            if (Vector3.Distance(transform.position, _player.transform.position) <= dashRange)
+            {
+                dashing = true;
+                _speed=0;
+                yield return new WaitForSeconds(1);
+                float elapsedTime = 0f;
+                _speed=_gameManager._enemySpeed*10;
+                while (elapsedTime < dashTime)
+                {
+                    elapsedTime += Time.deltaTime;
+                    yield return null;
+                }
+                _speed=_gameManager._enemySpeed;
+                dashing = false; 
+               yield return new WaitForSeconds(5);
+            }
+            yield return new WaitForSeconds(0.1f); // Check every 0.1 seconds
+        }
     }
     private void Explode()
     {

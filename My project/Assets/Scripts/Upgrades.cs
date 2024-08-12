@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -18,7 +19,7 @@ public class Upgrades : MonoBehaviour
     public TextMeshProUGUI upgradeDes1;
     public TextMeshProUGUI upgradeDes2;
     public TextMeshProUGUI upgradeDes3;
-    List<Upgrade> UpgradesList;
+    public List<Upgrade> UpgradesList;
     public class Upgrade{
         public string Name{get; set;}
         public string Description{get; set;}
@@ -41,6 +42,10 @@ public class Upgrades : MonoBehaviour
         new Upgrade{Name="Magnetic Distance", Description="Increase magnetic distance by X%", Rarity="Common", Value=20},
         new Upgrade{Name="Enemy Speed", Description="Reduce enemy speed by X%", Rarity="Common", Value=10f},
         new Upgrade{Name="Durability", Description="Increase damage income reduction by X", Rarity="Common", Value=4f},
+        new Upgrade{Name="Crit Chance", Description="Increase crit chance by X%", Rarity="Common", Value=10f},
+        new Upgrade{Name="Crit Damage", Description="Increase crit damage deal by X%", Rarity="Common", Value=20f},
+        new Upgrade{Name="Dodge Chance", Description="Increase dodge chance by X%", Rarity="Common", Value=5f},
+        new Upgrade{Name="Luck", Description="Increase luck by X", Rarity="Common", Value=2f},
     };
     public List<Upgrade> rareUpgrades = new List<Upgrade>{
          new Upgrade{Name="Health", Description="Increase player health by X", Rarity="Rare", Value=40},
@@ -53,7 +58,10 @@ public class Upgrades : MonoBehaviour
         new Upgrade{Name="Magnetic Distance", Description="Increase magnetic distance by X%", Rarity="Rare", Value=40},
         new Upgrade{Name="Enemy Speed", Description="Reduce enemy speed by X%", Rarity="Rare", Value=20f},
         new Upgrade{Name="Durability", Description="Increase damage income reduction by X", Rarity="Rare", Value=8f},
-       
+        new Upgrade{Name="Crit Chance", Description="Increase crit chance by X%", Rarity="Rare", Value=20f},
+        new Upgrade{Name="Crit Damage", Description="Increase crit damage deal by X%", Rarity="Rare", Value=40f},
+        new Upgrade{Name="Dodge Chance", Description="Increase dodge chance by X%", Rarity="Rare", Value=10f},
+        new Upgrade{Name="Luck", Description="Increase luck by X", Rarity="Rare", Value=4f},
     };
     public List<Upgrade> epicUpgrades = new List<Upgrade>{
          new Upgrade{Name="Health", Description="Increase player health by X", Rarity="Epic", Value=60},
@@ -66,6 +74,10 @@ public class Upgrades : MonoBehaviour
         new Upgrade{Name="Magnetic Distance", Description="Increase magnetic distance by X%", Rarity="Epic", Value=60},
         new Upgrade{Name="Enemy Speed", Description="Reduce enemy speed by X%", Rarity="Epic", Value=30f},
         new Upgrade{Name="Durability", Description="Increase damage income reduction by X", Rarity="Epic", Value=12f},
+        new Upgrade{Name="Crit Chance", Description="Increase crit chance by X%", Rarity="Epic", Value=30f},
+        new Upgrade{Name="Crit Damage", Description="Increase crit damage deal by X%", Rarity="Epic", Value=60f},
+        new Upgrade{Name="Dodge Chance", Description="Increase dodge chance by X%", Rarity="Epic", Value=15f},
+        new Upgrade{Name="Luck", Description="Increase luck by X", Rarity="Epic", Value=6f},
     };
     public List<Upgrade> legendaryUpgrades = new List<Upgrade>{
          new Upgrade{Name="Health", Description="Increase player health by X", Rarity="Legendary", Value=80},
@@ -78,6 +90,10 @@ public class Upgrades : MonoBehaviour
         new Upgrade{Name="Magnetic Distance", Description="Increase magnetic distance by X%", Rarity="Legendary", Value=80},
         new Upgrade{Name="Enemy Speed", Description="Reduce enemy speed by X%", Rarity="Legendary", Value=40f},
         new Upgrade{Name="Durability", Description="Increase damage income reduction by X", Rarity="Legendary", Value=16f},
+        new Upgrade{Name="Crit Chance", Description="Increase crit chance by X%", Rarity="Legendary", Value=40f},
+        new Upgrade{Name="Crit Damage", Description="Increase crit damage deal by X%", Rarity="Legendary", Value=80f},
+        new Upgrade{Name="Dodge Chance", Description="Increase dodge chance by X%", Rarity="Legendary", Value=20f},
+        new Upgrade{Name="Luck", Description="Increase luck by X", Rarity="Legendary", Value=8f},
     };
     public List <Upgrade> uniqueUpgrades = new List<Upgrade>{
         new Upgrade{Name="Explosive Enemies", Description="Enemy explode deal X damage on death", Rarity="Unique", Value=30},
@@ -88,6 +104,8 @@ public class Upgrades : MonoBehaviour
         new Upgrade{Name="Poison Bullet", Description="Bullet deal X% enemy's health minimum 1 per second for 5 seconds", Rarity="Unique", Value=3},
         new Upgrade{Name="Brumble Vest", Description="Reduce 50% damage income, deal X damage to enemies on touch", Rarity="Unique", Value=20},
         new Upgrade{Name="Trap Bullet", Description="Bullet will stop enemies from moving for X second on hit", Rarity="Unique", Value=3},
+        new Upgrade{Name="Lucky Bullet", Description="Bullet will deal more X damage for each luck", Rarity="Unique", Value=2},
+        new Upgrade{Name="Sniping Bullet", Description="Bullet will always crit, crit chance will increase crit damage instead", Rarity="Unique", Value=0},
     };
     public void ButtonSet(){
         if(UpgradesList!=null){
@@ -96,9 +114,9 @@ public class Upgrades : MonoBehaviour
             }
         }
         UpgradesList = new List<Upgrade>();
-        if(_gameManager._level%10==0 && _gameManager._level<=20){
-            for(int i=0;i<3;i++){
-                int t=Random.Range(0, uniqueUpgrades.Count);
+        if(_gameManager._level%10==0 && _gameManager._level<=30){
+            for(int x=0;x<3;x++){
+                int t=UnityEngine.Random.Range(0, uniqueUpgrades.Count);
                 UpgradesList.Add(uniqueUpgrades[t]);
                 uniqueUpgrades.RemoveAt(t);
             }
@@ -106,24 +124,25 @@ public class Upgrades : MonoBehaviour
         else{
             for (int i = 0; i < 3; i++)
             {
-                int weight = Random.Range(0, 100);
-                if(weight < 50){
-                    int t=Random.Range(0, commonUpgrades.Count);
+                int weight = UnityEngine.Random.Range(0, 100-_gameManager._level*2-_gameManager.luck);
+                if(weight > 60){
+                    int t=UnityEngine.Random.Range(0, commonUpgrades.Count);
                     UpgradesList.Add(commonUpgrades[t]);
                     commonUpgrades.RemoveAt(t);
-                } else if(weight < 80){
-                    int t=Random.Range(0, rareUpgrades.Count);
+                } else if(weight > 30){
+                    int t=UnityEngine.Random.Range(0, rareUpgrades.Count);
                     UpgradesList.Add(rareUpgrades[t]);
                     rareUpgrades.RemoveAt(t);
-                } else if(weight < 95){
-                    int t=Random.Range(0, epicUpgrades.Count);
+                } else if(weight > 10){
+                    int t=UnityEngine.Random.Range(0, epicUpgrades.Count);
                     UpgradesList.Add(epicUpgrades[t]);
                     epicUpgrades.RemoveAt(t);
                 } else{
-                    int t=Random.Range(0, legendaryUpgrades.Count);
+                    int t=UnityEngine.Random.Range(0, legendaryUpgrades.Count);
                     UpgradesList.Add(legendaryUpgrades[t]);
                     legendaryUpgrades.RemoveAt(t);
                 }
+                Debug.Log(UpgradesList[i].Description);
             }
         }
          // Setting text
@@ -258,6 +277,22 @@ public class Upgrades : MonoBehaviour
         {
             _gameManager._durability += increase;
         }
+        else if (Upgrade_chosen == "Crit Chance")
+        {
+            _gameManager.critChance += increase;
+        }
+        else if (Upgrade_chosen == "Crit Damage")
+        {
+            _gameManager.critDamage += increase;
+        }
+        else if (Upgrade_chosen == "Dodge Chance")
+        {
+            _gameManager.dodgeChance += increase;
+        }
+        else if (Upgrade_chosen == "Luck")
+        {
+            _gameManager.luck += Convert.ToInt32(increase);
+        }
         else if (Upgrade_chosen == "Explosive Enemies")
         {
             _gameManager.explode = true;
@@ -290,6 +325,15 @@ public class Upgrades : MonoBehaviour
         {
             _gameManager.brumbleVest = true;
         }
+        else if (Upgrade_chosen == "Lucky Bullet")
+        {
+            _gameManager.luckyBullet = true;
+        }
+        else if (Upgrade_chosen == "Sniping Bullet")
+        {
+            _gameManager.snipingBullet = true;
+            _gameManager.critChance += 95;
+        }
         _gameManager.inUpgrade = false;
         _gameManager.isPaused = false;
         ButtonSet();
@@ -298,7 +342,8 @@ public class Upgrades : MonoBehaviour
     {
         if(_gameManager._level<10) _gameManager._uniqueUpgrade1 = description;
         else if(_gameManager._level<20) _gameManager._uniqueUpgrade2 = description;
-        else _gameManager._uniqueUpgrade3 = description;
+        else if(_gameManager._level <30) _gameManager._uniqueUpgrade3 = description;
+        else _gameManager._uniqueUpgrade4 = description;
     }
     
 }

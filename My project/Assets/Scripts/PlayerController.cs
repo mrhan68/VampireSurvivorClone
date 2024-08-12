@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -19,6 +20,8 @@ public class PlayerController : MonoBehaviour
     Vector2 offset;
     [SerializeField] GameObject _bullet;
     [SerializeField] GameObject _bulletSpawn;
+    
+    [SerializeField] GameObject _popUpDamage;
     GameObject[] enemies=null;
     Vector2 _shootDirection;
     float _bulletSpeed = 15f;
@@ -160,7 +163,21 @@ public class PlayerController : MonoBehaviour
     {
         damage -=_gameManager._durability;
         if(damage<0) damage=0;
-        if(_gameManager.brumbleVest) damage/=2;
-        _gameManager._playerHealth -= damage;
+        int weight = UnityEngine.Random.Range(0, 100);
+        if(weight<_gameManager.dodgeChance){
+            GameObject popUp = Instantiate(_popUpDamage, transform.position, quaternion.identity);
+            popUp.GetComponent<TextMeshPro>().text = "Dodge!";
+            popUp.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 2f);
+            Destroy(popUp, 1f);
+        }
+        else{
+            if(_gameManager.brumbleVest) damage/=2;
+            _gameManager._playerHealth -= damage;
+            GameObject popUp = Instantiate(_popUpDamage, transform.position, quaternion.identity);
+            popUp.GetComponent<TextMeshPro>().text = damage.ToString();
+            popUp.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 2f);
+            popUp.GetComponent<TextMeshPro>().color = Color.red;
+            Destroy(popUp, 1f);
+        }
     }
 }

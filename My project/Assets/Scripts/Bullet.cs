@@ -21,6 +21,7 @@ public class Bullet : MonoBehaviour
         pierceNumber=_gameManager.pierceNumber;
         damage = _gameManager.damage;
         if(_gameManager.isGiant) damage+=_gameManager._durability*2;
+        if(_gameManager.luckyBullet) damage+=_gameManager.luck*2;
         isBounce=_gameManager.isBounce;
         isCold=_gameManager.isCold;
         isPoison=_gameManager.isPoison;

@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public float _enemyHealth ;
     public float _bossHealth ;
     public float _expBar;
-    public float _level;
+    public int _level;
     public float magneticDistance;
     public float pushDistance;
     public float _enemySpeed;
@@ -47,7 +47,14 @@ public class GameManager : MonoBehaviour
     public string _uniqueUpgrade1;
     public string _uniqueUpgrade2;
     public string _uniqueUpgrade3;
+    public string _uniqueUpgrade4;
     public bool inUpgrade;
+    public float critChance;
+    public float critDamage;
+    public float dodgeChance;
+    public bool luckyBullet;
+    public bool snipingBullet;
+    public int luck;
     public void Start(){
         initial();
         UpgradePanel.SetActive(false);
@@ -73,6 +80,10 @@ public class GameManager : MonoBehaviour
             {
                 PauseGame();
             }
+        }
+        if(snipingBullet && critChance>100) {
+            critDamage+=(critChance-100)*2;
+            critChance=100;
         }
     }
     public void levelUp(){
@@ -121,11 +132,15 @@ public class GameManager : MonoBehaviour
         _gunEnemySpeed = 3f;
         _bossDamage = 50;
         _playerHealth = 90;
-        _playerSpeed = 6f;
+        _playerSpeed = 7f;
         _maxPlayerHealth = 90;
         _durability = 0;
         enemyDamage = 20;
         gunEnemyDamage = 10;
+        critChance = 5f;
+        critDamage = 150f;
+        dodgeChance = 5f;
+        luck = 0;
         _expMultiplier=1f;
         isPaused = false;
         numberShoots = 1;

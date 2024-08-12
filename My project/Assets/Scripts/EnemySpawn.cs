@@ -58,8 +58,6 @@ public class EnemySpawn : MonoBehaviour
             _gunSpawnRate -= 0.1f;
         }
         _gameManager._enemyHealth += 10;
-        _gameManager._enemySpeed += 0.3f;
-        _gameManager._gunEnemySpeed += 0.2f;
         _gameManager.enemyDamage += 3;
         _gameManager.gunEnemyDamage += 2;
         StartCoroutine(SpawnRateIncrease());

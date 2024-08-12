@@ -192,51 +192,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2122}
     - Class: 114
-      Script: {instanceID: 2934}
+      Script: {instanceID: 2580}
     - Class: 114
-      Script: {instanceID: 2948}
+      Script: {instanceID: 2936}
     - Class: 114
-      Script: {instanceID: 3200}
+      Script: {instanceID: 2950}
     - Class: 114
-      Script: {instanceID: 3552}
+      Script: {instanceID: 3202}
     - Class: 114
-      Script: {instanceID: 4070}
+      Script: {instanceID: 3554}
     - Class: 114
-      Script: {instanceID: 4106}
+      Script: {instanceID: 4072}
     - Class: 114
-      Script: {instanceID: 4314}
+      Script: {instanceID: 4108}
     - Class: 114
-      Script: {instanceID: 5998}
+      Script: {instanceID: 4316}
     - Class: 114
-      Script: {instanceID: 6092}
+      Script: {instanceID: 6000}
     - Class: 114
-      Script: {instanceID: 6174}
+      Script: {instanceID: 6094}
     - Class: 114
-      Script: {instanceID: 6744}
+      Script: {instanceID: 6176}
     - Class: 114
-      Script: {instanceID: 6802}
+      Script: {instanceID: 6746}
     - Class: 114
-      Script: {instanceID: 7018}
+      Script: {instanceID: 6804}
     - Class: 114
-      Script: {instanceID: 7118}
+      Script: {instanceID: 7020}
     - Class: 114
-      Script: {instanceID: 7200}
+      Script: {instanceID: 7120}
     - Class: 114
-      Script: {instanceID: 7432}
+      Script: {instanceID: 7202}
     - Class: 114
-      Script: {instanceID: 7568}
+      Script: {instanceID: 7434}
     - Class: 114
-      Script: {instanceID: 8468}
+      Script: {instanceID: 7570}
     - Class: 114
-      Script: {instanceID: 8622}
+      Script: {instanceID: 8470}
     - Class: 114
-      Script: {instanceID: 9074}
+      Script: {instanceID: 8624}
     - Class: 114
-      Script: {instanceID: 9172}
+      Script: {instanceID: 9076}
     - Class: 114
-      Script: {instanceID: 9664}
+      Script: {instanceID: 9174}
     - Class: 114
-      Script: {instanceID: 9790}
+      Script: {instanceID: 9666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -281,27 +281,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2382}
     - Class: 114
-      Script: {instanceID: 2732}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2934}
+      Script: {instanceID: 2936}
     - Class: 114
-      Script: {instanceID: 3200}
+      Script: {instanceID: 3202}
     - Class: 114
-      Script: {instanceID: 3552}
+      Script: {instanceID: 3554}
     - Class: 114
-      Script: {instanceID: 4700}
+      Script: {instanceID: 4702}
     - Class: 114
-      Script: {instanceID: 4834}
+      Script: {instanceID: 4836}
     - Class: 114
-      Script: {instanceID: 5156}
+      Script: {instanceID: 5158}
     - Class: 114
-      Script: {instanceID: 6092}
+      Script: {instanceID: 6094}
     - Class: 114
-      Script: {instanceID: 6802}
+      Script: {instanceID: 6804}
     - Class: 114
-      Script: {instanceID: 7018}
+      Script: {instanceID: 7020}
     - Class: 114
-      Script: {instanceID: 7432}
+      Script: {instanceID: 7434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -475,6 +475,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 749265027cb11eb3ffb5eb63c3700769
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ScoreMenuHandler
   - hash:
       serializedVersion: 2
       Hash: 674f22ab166efb9fbd2bbc5a88542c7e
@@ -1083,7 +1089,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 3cf6c88e0e23b622c786f5090df975df
+      Hash: ba0250ad9210e4965a6ea86e00d2383e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
@@ -1179,7 +1185,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 433916c9cb578c2d64a2dd807373bf6b
+      Hash: 51d691c247840d9a7f960bcfe8f6534b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PauseMenuControl
@@ -1461,7 +1467,7 @@ ScriptsOnlyBuild:
     className: SpriteLibraryAsset
   - hash:
       serializedVersion: 2
-      Hash: 41c972066ef2a0c13fdf7459ad89fc42
+      Hash: c69e719761bf7e5e77ebd52c97841851
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -1603,12 +1609,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 749265027cb11eb3ffb5eb63c3700769
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ScoreMenuHandler
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScren.unity

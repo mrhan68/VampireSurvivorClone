@@ -339,7 +339,7 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 14869,
+      "PayloadLength": 15289,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -436,26 +436,26 @@
         "E:/support app/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll",
         "E:/support app/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
         "E:/support app/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
-        "E:/My project/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
-        "E:/My project/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
-        "E:/My project/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll",
         "E:/support app/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.dll",
         "E:/support app/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "E:/support app/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",
@@ -1362,7 +1362,7 @@
       "DisplayName": "Copying Assembly-CSharp.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Assembly-CSharp.dll"
@@ -1374,7 +1374,7 @@
       "DisplayName": "Copying Unity.2D.IK.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.2D.IK.Runtime.dll"
@@ -1386,7 +1386,7 @@
       "DisplayName": "Copying Unity.Burst.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.Burst.dll"
@@ -1398,7 +1398,7 @@
       "DisplayName": "Copying Unity.VisualScripting.Core.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.VisualScripting.Core.dll"
@@ -1410,7 +1410,7 @@
       "DisplayName": "Copying Unity.2D.Animation.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.2D.Animation.Runtime.dll"
@@ -1422,7 +1422,7 @@
       "DisplayName": "Copying Unity.2D.Tilemap.Extras.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.2D.Tilemap.Extras.dll"
@@ -1434,7 +1434,7 @@
       "DisplayName": "Copying Unity.VisualScripting.Flow.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.VisualScripting.Flow.dll"
@@ -1446,7 +1446,7 @@
       "DisplayName": "Copying Unity.InternalAPIEngineBridge.001.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.InternalAPIEngineBridge.001.dll"
@@ -1458,7 +1458,7 @@
       "DisplayName": "Copying Unity.2D.Common.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.2D.Common.Runtime.dll"
@@ -1470,7 +1470,7 @@
       "DisplayName": "Copying UnityEngine.UI.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/UnityEngine.UI.dll"
@@ -1482,7 +1482,7 @@
       "DisplayName": "Copying Unity.Timeline.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.Timeline.dll"
@@ -1494,7 +1494,7 @@
       "DisplayName": "Copying Unity.Collections.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.Collections.dll"
@@ -1506,7 +1506,7 @@
       "DisplayName": "Copying Unity.2D.SpriteShape.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.2D.SpriteShape.Runtime.dll"
@@ -1518,7 +1518,7 @@
       "DisplayName": "Copying Unity.2D.PixelPerfect.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.2D.PixelPerfect.dll"
@@ -1530,7 +1530,7 @@
       "DisplayName": "Copying Unity.Mathematics.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.Mathematics.dll"
@@ -1542,7 +1542,7 @@
       "DisplayName": "Copying Unity.TextMeshPro.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.TextMeshPro.dll"
@@ -1554,7 +1554,7 @@
       "DisplayName": "Copying Unity.VisualScripting.State.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll"
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.VisualScripting.State.dll"
@@ -1566,7 +1566,7 @@
       "DisplayName": "Copying Unity.Collections.LowLevel.ILSupport.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll"
@@ -1578,7 +1578,7 @@
       "DisplayName": "Copying Unity.VisualScripting.Antlr3.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
@@ -1590,7 +1590,7 @@
       "DisplayName": "Copying Unity.Burst.Unsafe.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "E:/My project/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll"
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll"
       ],
       "Outputs": [
         "E:/VampireSurvivorClone/My project_Data/Managed/Unity.Burst.Unsafe.dll"
@@ -1865,8 +1865,8 @@
       "Annotation": "GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker",
       "DisplayName": "Running Burst Compiler",
       "ActionType": "RunRPCCommand",
-      "PayloadOffset": 15075,
-      "PayloadLength": 13776,
+      "PayloadOffset": 15495,
+      "PayloadLength": 14196,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Da",
       "Action": "GenerateNativePluginsForAssemblies",
       "Inputs": [
@@ -1938,26 +1938,26 @@
         "E:/support app/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll",
         "E:/support app/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
         "E:/support app/2022.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
-        "E:/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
-        "E:/My project/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
-        "E:/My project/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
-        "E:/My project/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
+        "E:/VampireSurvivorClone/My project/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.burst@1.8.16/Unity.Burst.Unsafe.dll",
         "E:/support app/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.dll",
         "E:/support app/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "E:/support app/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",
@@ -1982,7 +1982,7 @@
         "E:/support app/2022.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/mscorlib.dll",
         "ProjectSettings/BurstAotSettings_StandaloneWindows.json",
         "Library/BurstCache/AotSettings_StandaloneWindows.hash",
-        "E:/My project/Library/PackageCache/com.unity.burst@1.8.16/.Runtime/bcl.exe"
+        "E:/VampireSurvivorClone/My project/Library/PackageCache/com.unity.burst@1.8.16/.Runtime/bcl.exe"
       ],
       "Outputs": [],
       "TargetDirectories": [
@@ -2035,7 +2035,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 28940,
+      "PayloadOffset": 29780,
       "PayloadLength": 25,
       "PayloadDebugContentSnippet": "DefaultCompany\nMy project",
       "Inputs": [],
@@ -2719,6 +2719,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/Player8870506b.dag.json",
-  "PayloadsFile": "E:/My project/Library/Bee/Player8870506b.dag.payloads",
+  "PayloadsFile": "E:/VampireSurvivorClone/My project/Library/Bee/Player8870506b.dag.payloads",
   "RelativePathToRoot": "../.."
 }
